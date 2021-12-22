@@ -1,15 +1,19 @@
 [
   {
     "id": 1,
-    "name": "Sony Xperia Z3",
-    "price": 899,
+    "name": "adverse event",
     "specs": {
       "manufacturer": "Sony",
       "storage": 16,
       "os": "Android",
       "camera": 15
     },
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tristique ipsum in efficitur pharetra. Maecenas luctus ante in neque maximus, sed viverra sem posuere. Vestibulum lectus nisi, laoreet vel suscipit nec, feugiat at odio. Etiam eget tellus arcu.",
+    "description": "Any health problem that happens during the study.",
+    "sentence": "The study team needs to know about any adverse event that happens during the study.",
+    "moreinfo": "Every health problem has to be tracked even if it is not related to the study treatment.",
+    "example": "An example of an adverse event is catching a cold during the study.",
+    "opposite": "",
+    "related": "adverse reaction, side effect",
     "rating": 4,
     "image": {
       "small": "assets/images/sony-xperia-z3.jpg",
@@ -19,7 +23,6 @@
   {
     "id": 2,
     "name": "Iphone 6",
-    "price": 899,
     "specs": {
       "manufacturer": "Apple",
       "storage": 16,
@@ -36,7 +39,6 @@
   {
     "id": 3,
     "name": "HTC One M8",
-    "price": 899,
     "specs": {
       "manufacturer": "HTC",
       "storage": 32,
@@ -53,7 +55,6 @@
   {
     "id": 4,
     "name": "Galaxy Alpha",
-    "price": 899,
     "specs": {
       "manufacturer": "Samsung",
       "storage": 32,
@@ -70,7 +71,6 @@
   {
     "id": 5,
     "name": "Nokia Lumia",
-    "price": 450,
     "specs": {
       "manufacturer": "Nokia",
       "storage": 16,
@@ -87,7 +87,6 @@
   {
     "id": 6,
     "name": "Zte Nubia",
-    "price": 399,
     "specs": {
       "manufacturer": "ZTE",
       "storage": 32,
@@ -104,7 +103,6 @@
   {
     "id": 7,
     "name": "Samsung Galaxy S5",
-    "price": 399,
     "specs": {
       "manufacturer": "Samsung",
       "storage": 16,
@@ -121,7 +119,6 @@
   {
     "id": 8,
     "name": "Iphone 5S",
-    "price": 399,
     "specs": {
       "manufacturer": "Apple",
       "storage": 16,

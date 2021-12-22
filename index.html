@@ -26,16 +26,7 @@
 				<script id="products-template" type="x-handlebars-template">​
 					{{#each this}}
 						<li data-index="{{id}}">
-							<a href="#" class="product-photo"><img src="{{image.small}}" height="130" alt="{{name}}"/></a>
-							<h2><a href="#"> {{name}} </a></h2>
-							<ul class="product-description">
-								<li><span>Manufacturer: </span>{{specs.manufacturer}}</li>
-								<li><span>Storage: </span>{{specs.storage}} GB</li>
-								<li><span>OS: </span>{{specs.os}}</li>
-								<li><span>Camera: </span>{{specs.camera}} Mpx</li>
-							</ul>
-							<button>Buy Now!</button>
-							<p class="product-price">{{price}}$</p>
+							<a href="#"> {{name}} </a>
 							<div class="highlight"></div>
 						</li>
 					{{/each}}
@@ -51,8 +42,9 @@
 
 			<div class="preview-large">
 				<h3>Single product view</h3>
-				<img src=""/>
-				<p></p>
+				<!--<img src=""/>-->
+				<p class="description"></p>
+				<p class="sentence"></p>
 
 				<span class="close">×</span>
 			</div>
@@ -65,9 +57,8 @@
 
 	</div>
 
-
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-	<script src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.min.js"></script>
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/handlebars.min.js"></script>
 	<script src="assets/js/script.js"></script>
 
 
