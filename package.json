@@ -13,7 +13,6 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "gulp": "^4.2.2"
   },
   "dependencies": {
 
