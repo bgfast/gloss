@@ -1,0 +1,21 @@
+{
+    "id": 1,
+    "name": "adverse event",
+    "specs": {
+      "manufacturer": "Sony",
+      "storage": 16,
+      "os": "Android",
+      "camera": 15
+    },
+    "description": "Any health problem that happens during the study.",
+    "sentence": "The study team needs to know about any adverse event that happens during the study.",
+    "moreinfo": "Every health problem has to be tracked even if it is not related to the study treatment.",
+    "example": "An example of an adverse event is catching a cold during the study.",
+    "opposite": "",
+    "related": "adverse reaction, side effect",
+    "rating": 4,
+    "image": {
+      "small": "assets/images/sony-xperia-z3.jpg",
+      "large": "assets/images/sony-xperia-z3-large.jpg"
+    }
+}
