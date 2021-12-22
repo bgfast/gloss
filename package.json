@@ -13,7 +13,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "gulp": "^3.8.10"
+    "gulp": "^4"
 
   },
   "dependencies": {
