@@ -1,5 +1,6 @@
 var gulp = require('gulp');
 var jsonConcat = require('gulp-json-concat');
+const ghPages = require('gulp-gh-pages');
 
 gulp.task('default1', function (done) {
   console.log('Hello Gulp!');
@@ -29,17 +30,20 @@ gulp.task('default1', function (done) {
 
 gulp.task('default', function (done) {
   console.log('Hello Gulp!');
-  return gulp.src('glossary/**/*.json')
+  //return gulp.src('glossary/**/*.json')
+  gulp.src('glossary/**/*.json')
     .pipe(jsonConcat('glossary.json',function(data){
       return new Buffer(JSON.stringify(data));
     }))
     .pipe(gulp.dest('dist/json'));
-    done()
+  console.log('Hello start ghPages!');
+  gulp.src('./dist/**/*.json').pipe(ghPages());
+  console.log('Hello done!');
+  done()
 });
 
-const ghPages = require('gulp-gh-pages');
 
-gulp.task('deploy', () => src('./dist/**/*.json').pipe(ghPages()));
+//gulp.task('deploy', () => src('./dist/**/*.json').pipe(ghPages()));
 
 // npm install --save-dev gulp-json-concat
 // https://github.com/thedaviddias/gulp-json-concat
