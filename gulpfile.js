@@ -36,6 +36,11 @@ gulp.task('default', function (done) {
     .pipe(gulp.dest('dist/json'));
     done()
 });
+
+const ghPages = require('gulp-gh-pages');
+
+gulp.task('deploy', () => src('./dist/**/*.json').pipe(ghPages()));
+
 // npm install --save-dev gulp-json-concat
 // https://github.com/thedaviddias/gulp-json-concat
 // https://criticaldevelopers.com/blog/post/install-and-execute-gulp-in-visual-studio-code-vscode-on-windows
