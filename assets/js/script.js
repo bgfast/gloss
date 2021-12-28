@@ -1,5 +1,7 @@
 $(function () {
 
+	var theJSONFileName = "glossary.json"
+	//var theJSONFileName = "products.json"
 	// Globals variables
 
 		// 	An array containing objects with information about the products.
@@ -97,7 +99,9 @@ $(function () {
 	// These are called on page load
 
 	// Get data about our products from products.json.
-	$.getJSON( "glossary.json", function( data ) {
+	//$.getJSON( "glossary.json", function( data ) {
+	//$.getJSON( "glossary.json", function( data ) {
+	$.getJSON( theJSONFileName, function( data ) {
 
 		// Write the data into our global variable.
 		products = data;
@@ -222,17 +226,29 @@ $(function () {
 
 			var that = $(this);
 
-			//data.forEach(function (item) {
-			//	if(that.data('index') == item.id){
-					//that.removeClass('hidden');
-				//}
-			//});
-		});
-		//Object.entries(obj).forEach(entry => {
-  //let key = entry[0];
-  //let value = entry[1];
-  //console.log(key, value);
-//});
+			if(theJSONFileName == "products.json"){
+			// glossary
+			//if(true){
+			    data.forEach(function (item) {
+				    if(that.data('index') == item.id){
+					    that.removeClass('hidden');
+				    }
+			    });
+			}
+
+			if(theJSONFileName == "glossary.json"){
+			//if(false){
+		        Object.entries(data).forEach(entry => {
+				    if(that.data('index') == entry[1].id){
+					    that.removeClass('hidden');
+				    }
+                  //let key = entry[0];
+                  //let value = entry[1];
+                  //console.log(key, value);
+                //});
+			})}
+		
+		    });
 
 		// Show the page itself.
 		// (the render function hides all pages so we need to show the one we want).
@@ -249,6 +265,14 @@ $(function () {
 			container = $('.preview-large');
 
 		// Find the wanted product by iterating the data object and searching for the chosen index.
+		Object.entries(data).forEach(entry => {
+		    if(index == entry[1].id){
+				container.find('h3').text(entry[1].name);
+				container.find('p.description').text(entry[1].description);
+				container.find('p.sentence').text(entry[1].sentence);
+
+		   }
+		})
 		if(data.length){
 			data.forEach(function (item) {
 				if(item.id == index){
