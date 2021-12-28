@@ -96,72 +96,17 @@ header h2.tzine a{
 
 
 /*-------------------
-	All Products Page
+	All Terms Page
 --------------------*/
 
-/*	Filter Form	*/
 
-.filters{
-	box-sizing: border-box;
-	padding: 5px 30px 30px;
-	width: 190px;
-	background-color: #FFF;
-	border: 1px solid #DBE3E7;
-	border-radius: 3px;
-	box-shadow: 1px 3px 1px rgba(0, 0, 0, 0.08);
-	position: fixed;
-	text-align: left;
-	color: #2B2E31;
-	opacity: 0;
-	pointer-events: none;
-}
+/*	Terms List	*/
 
-.filters .filter-criteria{
-	display: block;
-	margin: 10px 0 10px;
-}
-
-.filters span{
-	font-size:14px;
-	display: block;
-	margin-bottom: 12px;
-	font-weight: bold;
-	margin-top: 20px;
-}
-
-.filters label{
-	display: block;
-	line-height: 1.4;
-	font-size: 15px;
-}
-
-.filters label input{
-	margin-right: 10px;
-}
-
-.filters button{
-	border-radius: 2px;
-	background-color:  #4BC34B;
-	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12);
-	border: 0;
-	color: #ffffff;
-	font-weight: bold;
-	font-size: 13px;
-	cursor: pointer;
-
-	width: 95px;
-	height: 32px;
-	margin-top: 10px;
-}
-
-
-/*	Products List	*/
-
-.all-products h3{
+.all-terms h3{
 	opacity: 0;
 }
 
-.products-list{
+.terms-list{
 	list-style:none;
 	margin-left:225px;
 	max-width: 1500px;
@@ -171,15 +116,14 @@ header h2.tzine a{
 	font-size: 0;
 }
 
-.all-products.visible .products-list,
-.all-products.visible .filters,
-.all-products.visible h3{
+.all-terms.visible .terms-list,
+.all-terms.visible h3{
 	opacity: 1;
 	transition: 1s;
 	pointer-events: auto;
 }
 
-.products-list > li{
+.terms-list > li{
 	box-sizing:border-box;
 	/*display: inline-block;*/
 	cursor: pointer;
@@ -198,14 +142,14 @@ header h2.tzine a{
 	padding: 25px;
 }
 
-.products-list > li.hidden{
+.terms-list > li.hidden{
 	opacity: 0.2;
 	pointer-events: none;
 }
 
 /* The product image */
 
-.products-list .product-photo{
+.terms-list .product-photo{
 	display: block;
 	text-align: center;
 	box-shadow : 0 0 20px 8px #f3f3f3 inset;
@@ -218,7 +162,7 @@ header h2.tzine a{
 
 /* The product name */
 
-.products-list h2{
+.terms-list h2{
 	display: block;
 	font-size: 18px;
 	white-space: nowrap;
@@ -228,14 +172,14 @@ header h2.tzine a{
 	margin:0;
 }
 
-.products-list h2 a{
+.terms-list h2 a{
 	text-decoration: none;
 	color: #2B2E31;
 }
 
-/* Product description */
+/* Term description */
 
-.products-list .product-description{
+.terms-list .product-description{
 	margin-top: 20px;
 
 	color: #5d5d5d;
@@ -249,22 +193,22 @@ header h2.tzine a{
 	list-style: none;
 }
 
-.products-list .product-description li{
+.terms-list .product-description li{
 	display: inline-block;
 	margin-right: 5px;
 }
 
-.products-list .product-description li:first-child{
+.terms-list .product-description li:first-child{
 	display: block;
 }
 
-.products-list .product-description li span{
+.terms-list .product-description li span{
 	font-weight: bold;
 }
 
 /* Price and order button */
 
-.products-list .highlight{
+.terms-list .highlight{
 	position: absolute;
 	top:0;
 	left:0;
@@ -275,7 +219,7 @@ header h2.tzine a{
 	transition: 0.4s;
 }
 
-.products-list > li:hover .highlight{
+.terms-list > li:hover .highlight{
 	opacity: 1;
 }
 
@@ -283,18 +227,18 @@ header h2.tzine a{
 
 @media (max-width: 800px){
 
-	.products-list .product-photo{
+	.terms-list .product-photo{
 		width: 225px;
 	}
 
-	.products-list .product-description{
+	.terms-list .product-description{
 		max-width: 225px;
 	}
 }
 
 
 /*---------------------------
-	Single Product Page
+	Single Term Page
 ----------------------------*/
 
 .single-product{
