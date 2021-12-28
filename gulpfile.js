@@ -1,6 +1,6 @@
 var gulp = require('gulp');
 var jsonConcat = require('gulp-json-concat');
-const ghPages = require('gulp-gh-pages');
+//const ghPages = require('gulp-gh-pages');
 
 gulp.task('default1', function (done) {
   console.log('Hello Gulp!');
@@ -35,9 +35,9 @@ gulp.task('default', function (done) {
     .pipe(jsonConcat('glossary.json',function(data){
       return new Buffer(JSON.stringify(data));
     }))
-    .pipe(gulp.dest('dist/json'));
+    .pipe(gulp.dest('./'));
   console.log('Hello start ghPages!');
-  gulp.src('./dist/**/*.json').pipe(ghPages());
+  //gulp.src('./dist/**/*.json').pipe(ghPages());
   console.log('Hello done!');
   done()
 });

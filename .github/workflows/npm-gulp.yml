@@ -27,3 +27,13 @@ jobs:
         npm install
         npm install --save-dev gulp-gh-pages
         gulp
+
+    - name: Commit files
+      run: |
+          git add glossary.json
+          git commit -m "Built files"
+    - name: Push changes
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: $
+        branch: $
