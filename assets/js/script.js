@@ -222,12 +222,17 @@ $(function () {
 
 			var that = $(this);
 
-			data.forEach(function (item) {
-				if(that.data('index') == item.id){
-					that.removeClass('hidden');
-				}
-			});
+			//data.forEach(function (item) {
+			//	if(that.data('index') == item.id){
+					//that.removeClass('hidden');
+				//}
+			//});
 		});
+		//Object.entries(obj).forEach(entry => {
+  //let key = entry[0];
+  //let value = entry[1];
+  //console.log(key, value);
+//});
 
 		// Show the page itself.
 		// (the render function hides all pages so we need to show the one we want).
