@@ -6,5 +6,9 @@
     "more_info": "",
     "example": "",
     "opposite_words": "",
-    "related_words": ""
+    "related_words": "",
+    "image": {
+      "small": "assets/images/template.png",
+      "large": "assets/images/template.png"
+    }
 }
