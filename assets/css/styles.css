@@ -344,8 +344,9 @@ header h2.tzine a{
 }
 
 .preview-large p{
+	text-align: left;
 	line-height: 23px;
-	padding: 15px 15px;
+	padding: 15px 25px;
 }
 
 .close{

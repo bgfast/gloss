@@ -163,7 +163,7 @@ $(function () {
 				container.find('p.more_info').text(entry[1].more_info);
 				container.find('p.related_words').text(entry[1].related_words);
 				container.find('p.opposite_words').text(entry[1].opposite_words);
-
+				container.find('img').attr('src', entry[1].image.small);
 		   }
 		})
 
