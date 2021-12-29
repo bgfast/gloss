@@ -160,9 +160,9 @@ $(function () {
 				container.find('p.definition').text(entry[1].definition);
 				container.find('p.sentence').text(entry[1].sentence);
 				container.find('p.example').text(entry[1].example);
-				container.find('p.more-info').text(entry[1].more-info);
-				container.find('p.related-words').text(entry[1].related-words);
-				container.find('p.opposite-words').text(entry[1].opposite-words);
+				container.find('p.more_info').text(entry[1].more_info);
+				container.find('p.related_words').text(entry[1].related_words);
+				container.find('p.opposite_words').text(entry[1].opposite_words);
 
 		   }
 		})
