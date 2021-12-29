@@ -149,8 +149,8 @@ header h2.tzine a{
 
 .terms-list{
 	list-style:none;
-	margin-left:225px;
-	max-width: 1500px;
+	margin-left:80px;
+	max-width: 1000px;
 	text-align: center;
 	padding: 0;
 	opacity: 0;
@@ -172,7 +172,7 @@ header h2.tzine a{
 	transition: 0.2s;
 
 	text-align:left;
-	font:normal 12px sans-serif;
+	font:normal 18px sans-serif;
 
 	background-color:#ffffff;
 	border:1px solid #dbe3e7;
