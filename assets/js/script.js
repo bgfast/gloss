@@ -157,8 +157,12 @@ $(function () {
 		Object.entries(data).forEach(entry => {
 		    if(index == entry[1].id){
 				container.find('h3').text(entry[1].name);
-				container.find('p.description').text(entry[1].description);
+				container.find('p.definition').text(entry[1].definition);
 				container.find('p.sentence').text(entry[1].sentence);
+				container.find('p.example').text(entry[1].example);
+				container.find('p.more-info').text(entry[1].more-info);
+				container.find('p.related-words').text(entry[1].related-words);
+				container.find('p.opposite-words').text(entry[1].opposite-words);
 
 		   }
 		})
