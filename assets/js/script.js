@@ -70,10 +70,10 @@ $(function () {
 			},
 
 			// Single Terms page.
-			'#product': function() {
+			'#term': function() {
 
 				// Get the index of which term we want to show and call the appropriate function.
-				var index = url.split('#product/')[1].trim();
+				var index = url.split('#term/')[1].trim();
 
 				renderSingleTermPage(index, terms);
 			},
@@ -112,7 +112,7 @@ $(function () {
 
 			var termIndex = $(this).data('index');
 
-			window.location.hash = 'product/' + termIndex;
+			window.location.hash = 'term/' + termIndex;
 		})
 	}
 

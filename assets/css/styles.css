@@ -190,7 +190,7 @@ header h2.tzine a{
 
 /* The term image */
 
-.terms-list .product-photo{
+.terms-list .term-photo{
 	display: block;
 	text-align: center;
 	box-shadow : 0 0 20px 8px #f3f3f3 inset;
@@ -220,7 +220,7 @@ header h2.tzine a{
 
 /* Term description */
 
-.terms-list .product-description{
+.terms-list .term-description{
 	margin-top: 20px;
 
 	color: #5d5d5d;
@@ -234,16 +234,16 @@ header h2.tzine a{
 	list-style: none;
 }
 
-.terms-list .product-description li{
+.terms-list .term-description li{
 	display: inline-block;
 	margin-right: 5px;
 }
 
-.terms-list .product-description li:first-child{
+.terms-list .term-description li:first-child{
 	display: block;
 }
 
-.terms-list .product-description li span{
+.terms-list .term-description li span{
 	font-weight: bold;
 }
 
@@ -268,11 +268,11 @@ header h2.tzine a{
 
 @media (max-width: 800px){
 
-	.terms-list .product-photo{
+	.terms-list .term-photo{
 		width: 225px;
 	}
 
-	.terms-list .product-description{
+	.terms-list .term-description{
 		max-width: 225px;
 	}
 }
