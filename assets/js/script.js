@@ -8,9 +8,9 @@ $(function () {
 
 	//	Event handlers for frontend navigation
 
-	// Single product page buttons
+	// Single term page buttons
 
-	var singleTermPage = $('.single-product');
+	var singleTermPage = $('.single-term');
 
 	singleTermPage.on('click', function (e) {
 
@@ -72,7 +72,7 @@ $(function () {
 			// Single Terms page.
 			'#product': function() {
 
-				// Get the index of which product we want to show and call the appropriate function.
+				// Get the index of which term we want to show and call the appropriate function.
 				var index = url.split('#product/')[1].trim();
 
 				renderSingleTermPage(index, terms);
@@ -105,18 +105,18 @@ $(function () {
 
 
 		// Each terms has a data-index attribute.
-		// On click change the url hash to open up a preview for this product only.
+		// On click change the url hash to open up a preview for this term only.
 		// Remember: every hashchange triggers the render function.
 		list.find('li').on('click', function (e) {
 			e.preventDefault();
 
-			var productIndex = $(this).data('index');
+			var termIndex = $(this).data('index');
 
-			window.location.hash = 'product/' + productIndex;
+			window.location.hash = 'product/' + termIndex;
 		})
 	}
 
-	// This function receives an object containing all the product we want to show.
+	// This function receives an object containing all the term we want to show.
 	function renderTermsPage(data){
 
 		var page = $('.all-terms'),
@@ -150,10 +150,10 @@ $(function () {
 	// Its parameters are an index from the hash and the terms object.
 	function renderSingleTermPage(index, data){
 
-		var page = $('.single-product'),
+		var page = $('.single-term'),
 			container = $('.preview-large');
 
-		// Find the wanted product by iterating the data object and searching for the chosen index.
+		// Find the wanted term by iterating the data object and searching for the chosen index.
 		Object.entries(data).forEach(entry => {
 		    if(index == entry[1].id){
 				container.find('h3').text(entry[1].name);

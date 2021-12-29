@@ -68,6 +68,47 @@ header h2.tzine a{
 }
 
 /*-----------------
+	The Footer
+------------------*/
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: left;
+  height: 40px;
+  z-index: 100;
+
+  background-color: #282b2c;
+  padding: 20px 40px;
+  color: #fff;
+  box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.1);
+}
+
+.footer h2.tzine{
+	float: right;
+	opacity:0.9;
+}
+
+.footer h2.tzine:hover{
+	opacity:1;
+}
+
+.footer h2.tzine a{
+	font-size: 11px;
+	text-transform: uppercase;
+	display: inline-block;
+	padding: 12px 18px;
+	border-radius: 3px;
+	background-color: #5895DB;
+}
+
+.footer a {
+	color: #ffffff;
+	font-size: 13px;
+}
+
+/*-----------------
 	Main Content
 ------------------*/
 
@@ -147,7 +188,7 @@ header h2.tzine a{
 	pointer-events: none;
 }
 
-/* The product image */
+/* The term image */
 
 .terms-list .product-photo{
 	display: block;
@@ -160,7 +201,7 @@ header h2.tzine a{
 	box-sizing: border-box;
 }
 
-/* The product name */
+/* The term name */
 
 .terms-list h2{
 	display: block;
@@ -241,7 +282,7 @@ header h2.tzine a{
 	Single Term Page
 ----------------------------*/
 
-.single-product{
+.single-term{
 	z-index: 100;
 }
 
@@ -256,7 +297,7 @@ header h2.tzine a{
 	z-index: 100;
 }
 
-.single-product.visible .overlay{
+.single-term.visible .overlay{
 	height: 100%;
 }
 
@@ -280,7 +321,7 @@ header h2.tzine a{
 
 }
 
-.single-product.visible .preview-large{
+.single-term.visible .preview-large{
 	opacity: 1;
 	transition: 1.4s;
 	pointer-events: auto;
