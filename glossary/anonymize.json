@@ -6,7 +6,7 @@
     "more_info": "Personal information such as name, birthdate, and address are removed. This means data collected during the study could not identify an individual.",
     "example": "",
     "opposite_words": "",
-    "related_words": "code/coded, data, deidentify, unlink",
+    "related_words": "code/coded,  data, deidentify, unlink",
     "image": {
       "small": "assets/images/anonymize.png",
       "large": "assets/images/anonymize.png"
